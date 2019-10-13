@@ -5,10 +5,13 @@
 		</title>
 		<link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/development-2/24/terminal-512.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<style>
 			body {
 				background-color: black;
 				color: white;
+				font: "Arial";
 			}
 			.dropbtn {
 				background-color: black;
@@ -18,16 +21,16 @@
 				font-size: 28px;
 			}
 			.dropdown {
+				font: "Arial";
 				position: relative;
   				display: inline-block;
 			}
 			.dropdown-content {
-				font: "Arial";
 				display: none;
 				position: absolute;
 				background-color: black;
 				color: #32CD32;
-				min-width: 160px;
+				min-width: 100px;
 				box-shadow: 2px 10px 18px 2px rgba(0,0,0,0.2);
 				z-index: 1;
 				border-radius: 10px;
@@ -40,18 +43,25 @@
 				cursor: pointer;
 			}
 
+			.dropbtn:hover {
+				background-color: #32CD32;
+				color: black;
+				cursor: pointer;
+			}
+
 			.dropdown:hover .dropdown-content {
 				display: block;
+				background-color: transparent;
 			}
 
 			.dropdown-content a {
 				color: #32CD32;
-				background-color: black;
+				background-color: transparent;
 				text-decoration: none;
 			}
 			.dropdown-content p {
 				color: black;
-				background-color: black;
+				background-color: transparent;
 			}
 
 			.dropdown-content a:hover {
@@ -59,12 +69,15 @@
 			}
 			.dropdown-content p:hover {
 				color: #32CD32;
-				background-color: black;
+				background-color: transparent;
 			}
 			.main {
-				padding-left: 160px;
-				padding-top: 20px;
-				color: #F5F5F5;
+				font: "Arial";
+				padding-left: 80px;
+				padding-top: 0px;
+				color: #32CD32;
+				text-align: center;
+				line-height: 30px;
 			}
 
 			.footer {
@@ -72,7 +85,7 @@
 				left: 20px;
 				bottom: 20px;
 				font-size: 24px;
-				width: 20%;
+				width: 5%;
 				background-color: black;
 				color: #32CD32;
 				text-align: left;
@@ -88,6 +101,14 @@
    				display: block;
    				margin: 10px 0;
 			}
+			.article_vid {
+				height:306;
+				width:538;
+			}
+			.row {
+				width: 95%;
+				padding-left: 80px;
+			}
 		</style>
 	</head>
 	<body>
@@ -98,10 +119,130 @@
 		   		<p>&#8859<a href="portfolio.html"> Portfolio</a><br></p>
 		   		<p>&#8859<a href="cv.html"> CV</a><br></p>
 		 	</div>
+		</div> 
+		<div class="main">
+			<div class="row">
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+                        <div class="card-image">
+						    <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="article_vid" src="https://www.youtube.com/embed/Aw844Wh-qH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						    </div>
+                        </div>
+                        <div class="card-body">
+							<h4 class="card-title">
+								<a>Deloitte Greece Hacking Challenge 2019</a>
+							</h4>
+							<p class="card-text">Participated and reached the final round of this Cybersecurity challenge (after ranking 11th in preliminaries) that involved various problems including Web exploitation, cryptography, reverse engineering, network forensics, steganography and generally a big spectrum of the security field. Finished 20th out of 178 contestants.</p>
+							<a class="btn btn-primary" href="https://www2.deloitte.com/gr/en/pages/careers/events/Deloitte-Greece-Student-Hacking-Contest.html">View Deloitte's Article</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+						<a><img class="card-img-top" src="lect.png" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a>Survey on Blockchain Consensus Algorithms</a>
+							</h4>
+							<p class="card-text">For the Blockchain course, I studied a survey paper by G.-T.Nguyen and K. Kim, on consensus algorithms, and combined it with personal research to present a lecture to the class on a plethora of consensus algorithms, their categories, properties and an overview of how each one works.</p>
+							<a class="btn btn-primary" href="https://docs.google.com/presentation/d/1Z8JZZmXQppvx_YbWOHt3fYA9G3y1vF3RAewJ8CXqmaE/edit#slide=id.p">View Presentation</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+						<a><img class="card-img-top" src="uth.png" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a>Network Intrusion Detection System using Machine Learning Techniques</a>
+							</h4>
+							<p class="card-text">For the course of Machine Learning, we
+                            created a system that uses mainly Multilayer Perceptron (compared to SVM and RandomForest)
+                            using network packet metadata to decide whether there is an ongoing attack on the system, with a
+                            low false positive rate. With less accuracy, the system might also predict the type of attack happening (Denial of Service, Backdoor etc.). The project was considered by the professor of the course as top 3.</p>
+							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417">View Code</a>
+							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417/blob/master/TEAM_G_FINAL_REPORT.pdf">View Paper</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+						<a><img class="card-img-top" src="panoptis.jpg" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a>Panoptis 2019 Military Cybersecurity Exercise</a>
+							</h4>
+							<p class="card-text">Coordinated a Cybersecurity Team that represented the University of Thessaly in Volos, as part of the GFOSS Team. The team solved in their entirety the Data Exfiltration and Social Network Communication Analysis episodes, which contained cryptography and steganography problems and were simulations on real situations. Volos UTH team was the only one who solved the second episode, and wrote the GFOSS report.</p>
+							<a class="btn btn-primary" href="https://privacy.ellak.gr/2019/06/19/apologismos-tis-simmetochis-tou-organismou-anichton-technologion-stin-askisi-kivernoaminas-panoptis-2019/">View GFOSS article</a>
+							<a class="btn btn-primary" href="Panoptis2019_SocialNetworkCommunicationAnalysis_VolosTEAM.pdf">View Ep.7 Report</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+						<a><img class="card-img-top" src="ether.jpg" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a>Common Ethereum Smart Contract Vulnerabilities </a>
+							</h4>
+							<p class="card-text">For the Blockchain course, me and my partner presented a lecture on common security vulnerabilities (like Reentrancy vulnerability of the DAO hack) and bad practices found in Ethereum smart contracts. The lecture had both theoretical discussion and a live demo including static analysis of the contracts with Oyente, deployment on Ropsten testnet and exploitation using Remix IDE.</p>
+							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/analyzed_contracts">View Code Repository</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+                        <div class="card-image">
+						    <div class="embed-responsive embed-responsive-16by9">
+						        <iframe class="article_vid" src="https://www.youtube.com/embed/B3xfpQ-yu_c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						    </div>
+                        </div>
+                        <div class="card-body">
+							<h4 class="card-title">
+								<a>Nasa Space Apps Challenge 2018 : Find my Cryosphere</a>
+							</h4>
+							<p class="card-text">Participated in the 1-day Challenge, solving "Find my Cryosphere". Namely, me and my partner developed a Python script that mines data from Nasa's earthdata web page, finds the places with most cold temperatures (cryosphere) and attempts to find organisations and businesses that might be affected in those areas using TomTom's maps and API.</p>
+							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/nasa_space_apps_2018">View Code</a>	
+							<a class="btn btn-primary" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/details">View Challenge</a>
+							<a class="btn btn-primary" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/teams/hmmy-uth/project">View Team</a>
+                        </div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+                        <a><img class="card-img-top" src="ingameapp.png" alt=""></a>
+                        <div class="card-body">
+							<h4 class="card-title">
+								<a> Videogame database Redis application</a>
+							</h4>
+							<p class="card-text"> Project for the Advanced Data Management course (noSQL databases). I chose Redis, and implemented a Nodejs application, where a player can create a new character, log in, perform game actions and search other players by doing under the hood asynchronous calls to a Redis key-value store. </p>
+							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/ingame_database_app_redis">View Code</a>
+							<a class="btn btn-primary" href="Redis_report_2159.pdf">View Redis Survey Paper</a>
+                        </div>
+					</div>
+				</div>
+				<div class="col-lg-6 mb-4">
+					<div class="card h-100">
+						<a><img class="card-img-top" src="uth.png" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a>Citation Prediction with Long Short-Term Memory Neural Networks</a>
+							</h4>
+							<p class="card-text"> Took data from Aminer.com regarding citations of academic papers over the years, processed them and created a Long Short-Term Memory neural network that trains on these data and predicts the number of citations a paper can get next year, and after 5 years given a citation timeseries of the former years.</p>
+							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/citation_forecasting_LSTM_NN">View Code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
 		</div>
 		<div class="footer">
 			<a href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a>
 			<br> <a href="https://github.com/EvangelouSotiris"><i class="fa fa-github"></i></a>
 		</div>
+		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
 </html>
