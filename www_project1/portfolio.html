@@ -108,12 +108,28 @@
 			.footer a {
 				color: #32CD32;
 			}
+
+			.footer a:hover {
+				color: black;
+				background-color: #32CD32;
+				border-radius: 10px;
+				padding-bottom: 5px;
+				padding-top: 5px;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+
+			.row {
+				padding-right: 20px;
+				padding-left: 20px;
+				color: black;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="dropdown">
 			<button class="dropbtn">Menu</button>
-		 	<div class="dropdown-content">
+		 	<div class="dropdown-content"><br>
 		   		<p>&#8859<a href="index.html"> Home</a><br></p>
 		   		<p>&#8859<a href="portfolio.html"> Portfolio</a><br></p>
 		   		<p>&#8859<a href="cv.html"> CV</a><br></p>
@@ -133,7 +149,7 @@
 								<a>Deloitte Greece Hacking Challenge 2019</a>
 							</h4>
 							<p class="card-text">Participated and reached the final round of this Cybersecurity challenge (after ranking 11th in preliminaries) that involved various problems including Web exploitation, cryptography, reverse engineering, network forensics, steganography and generally a big spectrum of the security field. Finished 20th out of 178 contestants.</p>
-							<a class="btn btn-primary" href="https://www2.deloitte.com/gr/en/pages/careers/events/Deloitte-Greece-Student-Hacking-Contest.html">View Deloitte's Article</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://www2.deloitte.com/gr/en/pages/careers/events/Deloitte-Greece-Student-Hacking-Contest.html">View Deloitte's Article</a>
 						</div>
 					</div>
 				</div>
@@ -144,8 +160,8 @@
 							<h4 class="card-title">
 								<a>Survey on Blockchain Consensus Algorithms</a>
 							</h4>
-							<p class="card-text">For the Blockchain course, I studied a survey paper by G.-T.Nguyen and K. Kim, on consensus algorithms, and combined it with personal research to present a lecture to the class on a plethora of consensus algorithms, their categories, properties and an overview of how each one works.</p>
-							<a class="btn btn-primary" href="https://docs.google.com/presentation/d/1Z8JZZmXQppvx_YbWOHt3fYA9G3y1vF3RAewJ8CXqmaE/edit#slide=id.p">View Presentation</a>
+							<p class="card-text">For the Blockchain course, I studied a survey paper by G.-T.Nguyen and K. Kim, on consensus algorithms, and combined it with personal research to present a lecture to the class on a plethora of consensus algorithms working in modern blockchain platforms, their categories, properties and an overview of how each one works.</p>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://docs.google.com/presentation/d/1Z8JZZmXQppvx_YbWOHt3fYA9G3y1vF3RAewJ8CXqmaE/edit#slide=id.p">View Presentation</a>
 						</div>
 					</div>
 				</div>
@@ -159,9 +175,9 @@
 							<p class="card-text">For the course of Machine Learning, we
                             created a system that uses mainly Multilayer Perceptron (compared to SVM and RandomForest)
                             using network packet metadata to decide whether there is an ongoing attack on the system, with a
-                            low false positive rate. With less accuracy, the system might also predict the type of attack happening (Denial of Service, Backdoor etc.). The project was considered by the professor of the course as top 3.</p>
-							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417">View Code</a>
-							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417/blob/master/TEAM_G_FINAL_REPORT.pdf">View Paper</a>
+                            low false positive rate. With less accuracy, the system might also predict the type of attack happening (DoS, Backdoor etc.). The project was considered by the professor of the course as top 3.</p>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417">View Code</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417/blob/master/TEAM_G_FINAL_REPORT.pdf">View Paper</a>
 						</div>
 					</div>
 				</div>
@@ -173,8 +189,8 @@
 								<a>Panoptis 2019 Military Cybersecurity Exercise</a>
 							</h4>
 							<p class="card-text">Coordinated a Cybersecurity Team that represented the University of Thessaly in Volos, as part of the GFOSS Team. The team solved in their entirety the Data Exfiltration and Social Network Communication Analysis episodes, which contained cryptography and steganography problems and were simulations on real situations. Volos UTH team was the only one who solved the second episode, and wrote the GFOSS report.</p>
-							<a class="btn btn-primary" href="https://privacy.ellak.gr/2019/06/19/apologismos-tis-simmetochis-tou-organismou-anichton-technologion-stin-askisi-kivernoaminas-panoptis-2019/">View GFOSS article</a>
-							<a class="btn btn-primary" href="Panoptis2019_SocialNetworkCommunicationAnalysis_VolosTEAM.pdf">View Ep.7 Report</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://privacy.ellak.gr/2019/06/19/apologismos-tis-simmetochis-tou-organismou-anichton-technologion-stin-askisi-kivernoaminas-panoptis-2019/">View GFOSS article</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="Panoptis2019_SocialNetworkCommunicationAnalysis_VolosTEAM.pdf">View Ep.7 Report</a>
 						</div>
 					</div>
 				</div>
@@ -186,7 +202,7 @@
 								<a>Common Ethereum Smart Contract Vulnerabilities </a>
 							</h4>
 							<p class="card-text">For the Blockchain course, me and my partner presented a lecture on common security vulnerabilities (like Reentrancy vulnerability of the DAO hack) and bad practices found in Ethereum smart contracts. The lecture had both theoretical discussion and a live demo including static analysis of the contracts with Oyente, deployment on Ropsten testnet and exploitation using Remix IDE.</p>
-							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/analyzed_contracts">View Code Repository</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/analyzed_contracts">View Code Repository</a>
 						</div>
 					</div>
 				</div>
@@ -202,9 +218,9 @@
 								<a>Nasa Space Apps Challenge 2018 : Find my Cryosphere</a>
 							</h4>
 							<p class="card-text">Participated in the 1-day Challenge, solving "Find my Cryosphere". Namely, me and my partner developed a Python script that mines data from Nasa's earthdata web page, finds the places with most cold temperatures (cryosphere) and attempts to find organisations and businesses that might be affected in those areas using TomTom's maps and API.</p>
-							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/nasa_space_apps_2018">View Code</a>	
-							<a class="btn btn-primary" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/details">View Challenge</a>
-							<a class="btn btn-primary" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/teams/hmmy-uth/project">View Team</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/nasa_space_apps_2018">View Code</a>	
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/details">View Challenge</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/teams/hmmy-uth/project">View Team</a>
                         </div>
 					</div>
 				</div>
@@ -216,8 +232,8 @@
 								<a> Videogame database Redis application</a>
 							</h4>
 							<p class="card-text"> Project for the Advanced Data Management course (noSQL databases). I chose Redis, and implemented a Nodejs application, where a player can create a new character, log in, perform game actions and search other players by doing under the hood asynchronous calls to a Redis key-value store. </p>
-							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/ingame_database_app_redis">View Code</a>
-							<a class="btn btn-primary" href="Redis_report_2159.pdf">View Redis Survey Paper</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/ingame_database_app_redis">View Code</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="Redis_report_2159.pdf">View Redis Survey Paper</a>
                         </div>
 					</div>
 				</div>
@@ -229,7 +245,7 @@
 								<a>Citation Prediction with Long Short-Term Memory Neural Networks</a>
 							</h4>
 							<p class="card-text"> Took data from Aminer.com regarding citations of academic papers over the years, processed them and created a Long Short-Term Memory neural network that trains on these data and predicts the number of citations a paper can get next year, and after 5 years given a citation timeseries of the former years.</p>
-							<a class="btn btn-primary" href="https://github.com/EvangelouSotiris/citation_forecasting_LSTM_NN">View Code</a>
+							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/citation_forecasting_LSTM_NN">View Code</a>
 						</div>
 					</div>
 				</div>

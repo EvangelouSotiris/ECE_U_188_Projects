@@ -8,12 +8,14 @@
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<style>
 			body {
+				background: url(back.webp);
+				background-size: cover;
 				background-color: black;
 				color: white;
 				font: "Arial";
 			}
 			.dropbtn {
-				background-color: black;
+				background-color: transparent;
 				border: none;
 				border-radius: 10px;
 				color: #32CD32;
@@ -59,7 +61,7 @@
 				text-decoration: none;
 			}
 			.dropdown-content p {
-				color: black;
+				color: transparent;
 				background-color: transparent;
 			}
 
@@ -71,11 +73,17 @@
 				background-color: transparent;
 			}
 			.main {
+				background: background:rgba(1,1,1,0.2);
 				font: "Arial";
 				padding-left: 80px;
 				color: #32CD32;
 				text-align: center;
 				line-height: 30px;
+			}
+			.main img {
+				padding:5px;
+   				border:5px solid #32CD32;
+   				background-color:transparent;
 			}
 
 			.footer {
@@ -103,12 +111,23 @@
 			.footer a {
 				color: #32CD32;
 			}
+
+			.footer a:hover {
+				color: black;
+				background-color: #32CD32;
+				border-radius: 10px;
+				padding-bottom: 5px;
+				padding-top: 5px;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+
 		</style>
 	</head>
 	<body>
 		<div class="dropdown">
 			<button class="dropbtn">Menu</button>
-		 	<div class="dropdown-content">
+		 	<div class="dropdown-content"><br>
 		   		<p>&#8859<a href="index.html"> Home</a><br></p>
 		   		<p>&#8859<a href="portfolio.html"> Portfolio</a><br></p>
 		   		<p>&#8859<a href="cv.html"> CV</a><br></p>
@@ -118,9 +137,9 @@
 		    <div class="row">
 		    	<div class="col-lg-12 text-center" style="top:50px">
 		    		<img src="delo.jpg" style="border-radius: 50%;" width=170px height=170px>
-		          	<h1> Evangelou Sotiris </h1>
+		          	<h1> Sotiris Evangelou </h1>
 		         	<p> 22 year old senior student at the University of Thessaly, Greece.<br>Candidate for a Master of Engineering on Electrical and Computer Engineering.</p>
-			       	<p> My interests revolve around Software Engineering, Network engineering, Linux administration and Computer/Information security. Currently studying for my University, working part-time as a System Administrator, helping as a Teaching Assistant for PSE in Data Science Applications course, and brainstorming a unique Thesis subject for the next semester. </p> <br>
+			       	<p> My interests revolve around Software Engineering, Network Engineering, Linux Administration and Computer/Information Security. Currently studying for my University, working part-time as a System Administrator, helping as a Teaching Assistant for PSE in Data Science Applications course, and brainstorming a unique Thesis subject for the next semester. </p> <br>
 		          	<button type="button" class="dropbtn" onclick="window.location.href='CV.pdf'">Download CV <i class="fa fa-download"></i></button>
 		          	<br>
 		      </div>
@@ -128,7 +147,7 @@
 		  </div>
 		<div class="footer">
 			<a href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a>
-			<br> <a href="https://github.com/EvangelouSotiris"><i class="fa fa-github"></i></a>
+			<br> <a href="https://github.com/EvangelouSotiris"> <i class="fa fa-github"> </i></a>
 		</div>
 	</body>
 </html>
