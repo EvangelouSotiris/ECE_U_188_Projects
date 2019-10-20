@@ -1,5 +1,5 @@
 <html>
-	<head>
+<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150078104-1"></script>
 		<script>
@@ -15,142 +15,180 @@
 		<link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/development-2/24/terminal-512.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<style>
-			body {
-				background: url(items/back.webp);
-				background-size: cover;
-				background-color: black;
-				color: white;
-				font-family: "Ubuntu";
-			}
-			.dropbtn {
-				background-color: transparent;
-				border: none;
-				border-radius: 10px;
-				color: #32CD32;
-				font-size: 28px;
-			}
-			.dropdown {
-				position: relative;
-  				display: inline-block;
-			}
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				background-color: black;
-				color: #32CD32;
-				min-width: 100px;
-				box-shadow: 2px 10px 18px 2px rgba(0,0,0,0.2);
-				z-index: 1;
-				border-radius: 10px;
-				line-height: 20px;
-			}
+		 <style type="text/css">
+		 	.my_btn {
+		 		color: white;
+		 		font-size: 16px;
+		 	}
+		 	.my_btn:hover {
+		 		color: #1aa3ff;
+		 	}
 
-			.dropdown:hover .dropbtn {
-				background-color: #32CD32;
-				color: black;
-				cursor: pointer;
-			}
+		 	.btn-lg {
+		 		font-size: 28px;
+		 	}
 
-			.dropbtn:hover {
-				background-color: #32CD32;
-				color: black;
-				cursor: pointer;
-			}
+		 	.navbar {
+		 		background-color: black;
+		 	}
 
-			.dropdown:hover .dropdown-content {
-				display: block;
-				background-color: transparent;
-			}
+		 	.dropdown-item:hover {
+		 		background-color: transparent;
+		 	}
 
-			.dropdown-content a {
-				color: #32CD32;
-				background-color: transparent;
-				text-decoration: none;
-			}
-			.dropdown-content p {
-				color: transparent;
-				background-color: transparent;
-			}
+		 	.main {
+		 		color: white;
+		 		text-align: center;
+		 		padding-left: 15%;
+		 		padding-right: 15%;
+		 	}
+		 	.main img {
+		 		padding:5px;
+   				border:5px solid transparent;
+   				background-color:transparent;
+		 	}
 
-			.dropdown-content a:hover {
-				border-radius: 5px;
-			}
-			.dropdown-content p:hover {
-				color: #32CD32;
-				background-color: transparent;
-			}
-			.main {
-				padding-left: 80px;
-				color: #32CD32;
-				text-align: center;
-				line-height: 30px;
-			}
-			.main img {
+			.main img:hover {
 				padding:5px;
-   				border:5px solid #32CD32;
+   				border:5px solid #1aa3ff;
    				background-color:transparent;
 			}
 
-			.footer {
-				position: fixed;
-				left: 20px;
-				bottom: 20px;
-				font-size: 24px;
-				width: 5%;
-				background-color: transparent;
-				color: #32CD32;
-				text-align: left;
-				word-spacing: 10px;
-			}
-			.dropdown-content br {
-				display: block;
-   				margin: 5px 0;
+			.keyword {
+				color: #47b5ff;
 			}
 
-			.footer br {
-   				display: block;
-   				margin: 10px 0;
+			.skill-list {
+				font-size: 14px;
 			}
-
-			.footer a {
-				color: #32CD32;
-			}
-
-			.footer a:hover {
-				color: black;
-				background-color: #32CD32;
-				border-radius: 10px;
-				padding-bottom: 5px;
-				padding-top: 5px;
-				padding-left: 5px;
-				padding-right: 5px;
-			}
-
-		</style>
-	</head>
-	<body>
-		<div class="dropdown">
-			<button class="dropbtn"><i class="fa fa-bars"></i></button>
-		 	<div class="dropdown-content">
-		   		<p>&#8859<a href="index.html"> Home</a><br></p>
-		   		<p>&#8859<a href="portfolio.html"> Portfolio</a><br></p>
-		   		<p>&#8859<a href="cv.html"> CV</a><br></p>
-		 	</div>
-		</div> 
-		 <div class="main">
-    		<img src="items/delo.jpg" style="border-radius: 50%;" width=170px height=170px>
-          	<h1> Sotiris Evangelou </h1>
-         	<p> 22 year old senior student at the University of Thessaly, Greece.<br>Candidate for a Master of Engineering on Electrical and Computer Engineering.</p>
-	       	<p> My interests revolve around Software Engineering, Network Engineering, Linux Administration and Computer/Information Security. Currently studying for my University, working part-time as a System Administrator, helping as a Teaching Assistant for PSE in Data Science Applications course, and brainstorming a unique Thesis subject for the next semester. </p> <br>
-          	<button type="button" class="dropbtn" onclick="window.location.href='CV.pdf'">Download CV <i class="fa fa-download"></i></button>
-          	<br>
-		  </div>
-		<div class="footer">
-			<a href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a>
-			<br> <a href="https://github.com/EvangelouSotiris"> <i class="fa fa-github"> </i></a>
-			<br> <a href="mailto:sevangelou@uth.gr?subject=Hello there!"><i class="fa fa-envelope"></i></a>
+		 </style>
+</head>
+<body style="font-family: Ubuntu; background-color: black;">
+	<nav class="navbar navbar-expand-lg">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" style="outline: none;"><div class="my_btn"><i class="fa fa-bars" style="color: white; font-size: 28px"></i></div></a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black;">
+						<a class="dropdown-item dropdown-entry" href="index.html"><div class="my_btn">Home</div></a>
+						<a class="dropdown-item dropdown-entry" href="portfolio.html"><div class="my_btn">Portfolio</div></a>
+					</div>
+			</ul>
 		</div>
-	</body>
+		<div>
+			<a class="btn-floating btn-lg btn-ins my_btn" href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a>
+			<a class="btn-floating btn-lg btn-ins my_btn" href="https://github.com/EvangelouSotiris"><i class="fa fa-github"></i></a>
+			<a class="btn-floating btn-lg btn-ins my_btn" href="mailto:sevangelou@uth.gr?subject=Hello there!"><i class="fa fa-envelope"></i></a>
+		</div>
+	</nav>
+
+	<div class="main">
+		<div class="row">
+			<div class="col-md-3 py">
+				<img src="items/delo.jpg" style="border-radius: 50%;" width=170px height=170px>
+			</div>
+			<div class="col-md py">
+				<h1> Hello, I am <span style="color: #1aa3ff">Sotiris Evangelou</span>.</h1>
+				<p>I am a 23 year old senior <span class="keyword">student</span> at the <a href="https://www.e-ce.uth.gr/?lang=en">University of Thessaly, Greece</a>.<br>Candidate for a <span class="keyword">Master of Engineering</span> on Electrical and Computer Engineering.<br>My interests revolve around <span class="keyword">Software Engineering</span>, <span class="keyword">Network Engineering</span>, <span class="keyword">Linux Administration</span>, <span class="keyword">Computer/Information Security</span> and <span class="keyword">Machine Learning/AI</span>.<br> Apart from studying at my University, I am also working part-time as a <span class="keyword">System Administrator</span>, helping as a <span class="keyword">Teaching Assistant</span> for PSE in Data Science Applications course, and brainstorming a unique Thesis subject for the next semester.</p>
+			</div>
+		</div>
+		<br>
+		<div class="row"> 
+			<div class="col-md py">
+				<h2 style="color: #1aa3ff"> Skills </h2>
+			</div>
+		</div>
+		<div class="row" style="text-align: left;">
+			<div class="col-md py">
+				<h4 class="keyword">Programming</h4>
+				<ul class="skill-list">
+					<li> Python </li>
+					<li> Bash </li>
+					<li> C </li>
+					<li> Java </li>
+					<li> C++ </li>
+					<li> Node JS </li>
+					<li> R </li>
+					<li> C# (Unity) </li>
+					<li> Object Oriented Programming</li>
+					<li> Concurrent Programming </li>
+				</ul>
+			</div>
+			<div class="col-md py">
+				<h4 class="keyword">Coursework</h4>
+				<ul class="skill-list">
+					<li> Algorithms-Data Structures </li>
+					<li> Blockchain Technologies </li>
+					<li> Numerical Analysis-Probability </li>
+					<li> Machine Learning-Neural Nets-PSEs</li>
+					<li> A.I.-Logic & Functional Programming</li>
+					<li> Linear Algebra-Differential Equations </li>
+					<li> Databases-NoSQL Databases </li>
+					<li> Information System Security</li>
+					<li> Networking, Software Defined Radio, Software Defined Networking, Internet Protocols</li>
+				</ul>
+			</div>
+			<div class="col-md py">
+				<h4 class="keyword">Administration</h4>
+				<ul class="skill-list">
+					<li> Linux fs/cli/logs </li>
+					<li> Nagios Core </li>
+					<li> Munin </li>
+					<li> Zabbix </li>
+					<li> BIND9 DNS </li>
+					<li> Vsftpd/Tftp </li>
+					<li> Proxmox Virtual Env</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="text-align: left;">
+			<div class="col-md py">
+				<h4 class="keyword">Tools-Utilities</h4>
+				<ul class="skill-list">
+					<li> Git </li>
+					<li> LaTex </li>
+					<li> SQL(MySQL,Postgre) </li>
+					<li> NoSQL (Redis) </li>
+					<li> HTML/CSS </li>
+				</ul>
+			</div>
+			<div class="col-md py">
+				<h4 class="keyword">OSs/Distros</h4>
+				<ul class="skill-list">
+					<li> Debian </li>
+					<li> Ubuntu </li>
+					<li> Kali </li>
+					<li> Open Suse </li>
+					<li> Windows </li>
+				</ul>
+			</div>
+			<div class="col-md py">
+				<h4 class="keyword">Soft skills</h4>
+				<ul class="skill-list">
+					<li> Bilingual(Greek, English) </li>
+					<li> Pair-Team Programming </li>
+					<li> Self motivated </li>
+					<li> Quick learner </li>
+					<li> Trial&Error Mentality</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="text-align: center">
+			<div class="col-md-12">	
+				<br>
+				<button type="button" class="btn my_btn" onclick="window.location.href='items/CV.pdf'" style="background-color: black; border: 2px solid #1aa3ff; border-radius: 8px;">Download CV <i class="fa fa-download"></i></button>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>

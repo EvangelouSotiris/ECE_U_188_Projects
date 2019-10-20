@@ -1,142 +1,121 @@
 <html>
-	<head>
+<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150078104-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-150078104-1');
+		</script>
 		<title>
 			$> Portfolio
 		</title>
 		<link rel="shortcut icon" href="https://cdn0.iconfinder.com/data/icons/development-2/24/terminal-512.png"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<style>
-			body {
-				background-color: black;
-				color: white;
-				font-family: "Ubuntu";
-			}
-			.dropbtn {
-				background-color: transparent;
-				border: none;
-				border-radius: 10px;
-				color: #32CD32;
-				font-size: 28px;
-			}
-			.dropdown {
-				position: relative;
-  				display: inline-block;
-			}
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				background-color: black;
-				color: #32CD32;
-				min-width: 100px;
-				box-shadow: 2px 10px 18px 2px rgba(0,0,0,0.2);
-				z-index: 1;
-				border-radius: 10px;
-				line-height: 20px;
+		 <style type="text/css">
+		 	.my_btn {
+		 		color: white;
+		 		font-size: 16px;
+		 	}
+		 	.my_btn:hover {
+		 		color: #1aa3ff;
+		 	}
+
+		 	.port_btn {
+		 		background-color: white;
+		 		color: black;
+		 		font-size: 16px;
+		 	}
+		 	.port_btn:hover {
+		 		color: #1aa3ff;
+		 	}
+
+
+		 	.btn-lg {
+		 		font-size: 28px;
+		 	}
+
+		 	.navbar {
+		 		background-color: black;
+		 	}
+
+		 	.dropdown-item:hover {
+		 		background-color: transparent;
+		 	}
+
+		 	.main {
+		 		color: white;
+		 		text-align: center;
+		 		padding-left: 2%;
+		 		padding-right: 2%;
+		 	}
+		 	.main img {
+		 		padding:5px;
+   				border:5px solid transparent;
+   				background-color:transparent;
+		 	}
+
+			.main img:hover {
+				padding:5px;
+   				border:5px solid #1aa3ff;
+   				background-color:transparent;
 			}
 
-			.dropdown:hover .dropbtn {
-				background-color: #32CD32;
-				color: black;
-				cursor: pointer;
+			.keyword {
+				color: #47b5ff;
 			}
 
-			.dropbtn:hover {
-				background-color: #32CD32;
-				color: black;
-				cursor: pointer;
+			.skill-list {
+				font-size: 14px;
 			}
 
-			.dropdown:hover .dropdown-content {
-				display: block;
-				background-color: transparent;
-			}
-
-			.dropdown-content a {
-				color: #32CD32;
-				background-color: transparent;
-				text-decoration: none;
-			}
-			.dropdown-content p {
-				color: black;
-				background-color: transparent;
-			}
-
-			.dropdown-content a:hover {
-				border-radius: 5px;
-			}
-			.dropdown-content p:hover {
-				color: #32CD32;
-				background-color: transparent;
-			}
-			.main {
-				padding-left: 80px;
-				position: relative;
-				color: #32CD32;
-				text-align: center;
-				padding-right: 20px;
-			}
-
-			.footer {
-				position: fixed;
-				left: 20px;
-				bottom: 20px;
-				font-size: 24px;
-				width: 5%;
-				background-color: transparent;
-				color: #32CD32;
-				text-align: left;
-				word-spacing: 10px;
-			}
-			.dropdown-content br {
-				display: block;
-   				margin: 5px 0;
-			}
-
-			.footer br {
-   				display: block;
-   				margin: 10px 0;
-			}
 			.article_vid {
 				height:306;
 				width:538;
 			}
 
-			.footer a {
-				color: #32CD32;
+			.card-body {
+				background-color: black;
+				color: white;
 			}
 
-			.footer a:hover {
-				color: black;
-				background-color: #32CD32;
-				border-radius: 10px;
-				padding-bottom: 5px;
-				padding-top: 5px;
-				padding-left: 5px;
-				padding-right: 5px;
+			.card-text {
+				color: white;
 			}
+		 </style>
+</head>
+<body style="font-family: Ubuntu; background-color: black;">
+	<nav class="navbar navbar-expand-lg">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" style="outline: none;"><div class="my_btn"><i class="fa fa-bars" style="color: white; font-size: 28px"></i></div></a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: black;">
+						<a class="dropdown-item dropdown-entry" href="index.html"><div class="my_btn">Home</div></a>
+						<a class="dropdown-item dropdown-entry" href="portfolio.html"><div class="my_btn">Portfolio</div></a>
+					</div>
+			</ul>
+		</div>
+		<div>
+			<a class="btn-floating btn-lg btn-ins my_btn" href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a>
+			<a class="btn-floating btn-lg btn-ins my_btn" href="https://github.com/EvangelouSotiris"><i class="fa fa-github"></i></a>
+			<a class="btn-floating btn-lg btn-ins my_btn" href="mailto:sevangelou@uth.gr?subject=Hello there!"><i class="fa fa-envelope"></i></a>
+		</div>
+	</nav>
 
-			.row {
-				padding-right: 20px;
-				padding-left: 20px;
-				color: black;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="dropdown">
-			<button class="dropbtn"><i class="fa fa-bars"></i></button>
-		 	<div class="dropdown-content">
-		   		<p>&#8859<a href="index.html"> Home</a><br></p>
-		   		<p>&#8859<a href="portfolio.html"> Portfolio</a><br></p>
-		   		<p>&#8859<a href="cv.html"> CV</a><br></p>
-		 	</div>
-		</div> 
-		<div class="main">
-			<div class="row">
-				<div class="col-lg-6 mb-4">
+	<div class="main">
+		<div class="row">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
                         <div class="card-image">
 						    <div class="embed-responsive embed-responsive-16by9">
@@ -144,68 +123,65 @@
 						    </div>
                         </div>
                         <div class="card-body">
-							<h4 class="card-title">
+							<h4 class="card-title keyword">
 								<a>Deloitte Greece Hacking Challenge 2019</a>
 							</h4>
-							<p class="card-text">Participated and reached the final round of this Cybersecurity challenge (after ranking 11th in preliminaries) that involved various problems including Web exploitation, cryptography, reverse engineering, network forensics, steganography and generally a big spectrum of the security field. Finished 20th out of 178 contestants.</p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://www2.deloitte.com/gr/en/pages/careers/events/Deloitte-Greece-Student-Hacking-Contest.html">View Deloitte's Article</a>
+							<p class="card-text" style="color: white">Participated and reached the final round of this Cybersecurity challenge (after ranking 11th in preliminaries) that involved various problems including <span class="keyword">Web exploitation</span>, <span class="keyword">cryptography</span>, <span class="keyword">reverse engineering</span>, <span class="keyword">network forensics</span>, <span class="keyword">steganography</span> and generally a big spectrum of the security field. Finished <span class="keyword">20th</span> out of 178 contestants.</p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://www2.deloitte.com/gr/en/pages/careers/events/Deloitte-Greece-Student-Hacking-Contest.html">Deloitte's Article</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
-						<a><img class="card-img-top" src="items/lect.png" alt=""></a>
+						<a class="disabled"><img class="card-img-top" src="items/lect.png" alt=""></a>
 						<div class="card-body">
-							<h4 class="card-title">
-								<a>Survey on Blockchain Consensus Algorithms</a>
+							<h4 class="card-title keyword">
+								<a class="disabled">Survey on Blockchain Consensus Algorithms</a>
 							</h4>
-							<p class="card-text">For the Blockchain course, I studied a survey paper by G.-T.Nguyen and K. Kim, on consensus algorithms, and combined it with personal research to present a lecture to the class on a plethora of consensus algorithms working in modern blockchain platforms, their categories, properties and an overview of how each one works.</p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://docs.google.com/presentation/d/1Z8JZZmXQppvx_YbWOHt3fYA9G3y1vF3RAewJ8CXqmaE/edit#slide=id.p">View Presentation</a>
+							<p class="card-text" style="color: white">For the <span class="keyword">Blockchain</span> course, I studied a survey paper by G.-T.Nguyen and K. Kim, on <span class="keyword">consensus algorithms</span>, and combined it with personal research to present a lecture to the class on a plethora of consensus algorithms working in modern blockchain platforms, their categories, properties and an overview of how each one works.</p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://docs.google.com/presentation/d/1Z8JZZmXQppvx_YbWOHt3fYA9G3y1vF3RAewJ8CXqmaE/edit#slide=id.p">Presentation</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
-						<a><img class="card-img-top" src="items/uth.png" alt=""></a>
+						<a class="disabled"><img class="card-img-top" src="items/ether.jpg" alt=""></a>
 						<div class="card-body">
-							<h4 class="card-title">
-								<a>Network Intrusion Detection System using Machine Learning Techniques</a>
+							<h4 class="card-title keyword">
+								<a class="disabled">Common Ethereum Smart Contract Vulnerabilities </a>
 							</h4>
-							<p class="card-text">For the course of Machine Learning, we
-                            created a system that uses mainly Multilayer Perceptron (compared to SVM and RandomForest)
-                            using network packet metadata to decide whether there is an ongoing attack on the system, with a
-                            low false positive rate. With less accuracy, the system might also predict the type of attack happening (DoS, Backdoor etc.). The project was considered by the professor of the course as top 3.</p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417">View Code</a>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417/blob/master/TEAM_G_FINAL_REPORT.pdf">View Paper</a>
+							<p class="card-text" style="color: white">For the Blockchain course, me and my partner presented a lecture on common <span class="keyword">security vulnerabilities</span> (like Reentrancy vulnerability of the DAO hack) and <span class="keyword">bad practices</span> found in <span class="keyword">Ethereum</span> smart contracts. The lecture had both theoretical discussion and a live demo including static analysis of the contracts with <span class="keyword">Oyente</span>, deployment on <span class="keyword">Ropsten</span> testnet and exploitation using <span class="keyword">Remix IDE</span>.</p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://github.com/EvangelouSotiris/analyzed_contracts">Code Repository</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
-						<a><img class="card-img-top" src="items/panoptis.jpg" alt=""></a>
+						<a class="disabled"><img class="card-img-top" src="items/panoptis.jpg" alt=""></a>
 						<div class="card-body">
-							<h4 class="card-title">
-								<a>Panoptis 2019 Military Cybersecurity Exercise</a>
+							<h4 class="card-title keyword">
+								<a class="disabled">Panoptis 2019 Military Cybersecurity Exercise</a>
 							</h4>
-							<p class="card-text">Coordinated a Cybersecurity Team that represented the University of Thessaly in Volos, as part of the GFOSS Team. The team solved in their entirety the Data Exfiltration and Social Network Communication Analysis episodes, which contained cryptography and steganography problems and were simulations on real situations. Volos UTH team was the only one who solved the second episode, and wrote the GFOSS report.</p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://privacy.ellak.gr/2019/06/19/apologismos-tis-simmetochis-tou-organismou-anichton-technologion-stin-askisi-kivernoaminas-panoptis-2019/">View GFOSS article</a>
-							<a class="btn dropbtn" style="font-size: 20px;" href="items/Panoptis2019_SocialNetworkCommunicationAnalysis_VolosTEAM.pdf">View Ep.7 Report</a>
+							<p class="card-text" style="color: white">Coordinated a Cybersecurity Team that represented the University of Thessaly in Volos, as part of the GFOSS Team. The team solved in their entirety the <span class="keyword">Data Exfiltration</span> and <span class="keyword">Social Network Communication Analysis</span> episodes, which contained <span class="keyword">cryptography</span> and <span class="keyword">steganography</span> problems and were simulations on real situations. Volos UTH team was the only one who solved the second episode, and wrote the GFOSS <span class="keyword">report</span>.</p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://privacy.ellak.gr/2019/06/19/apologismos-tis-simmetochis-tou-organismou-anichton-technologion-stin-askisi-kivernoaminas-panoptis-2019/">GFOSS article</a>
+							<a class="btn port_btn" style="font-size: 16px;" href="items/Panoptis2019_SocialNetworkCommunicationAnalysis_VolosTEAM.pdf">Ep.7 Report</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
-						<a><img class="card-img-top" src="items/ether.jpg" alt=""></a>
+						<a class="disabled"><img class="card-img-top" src="items/uth.png" alt=""></a>
 						<div class="card-body">
-							<h4 class="card-title">
-								<a>Common Ethereum Smart Contract Vulnerabilities </a>
+							<h4 class="card-title keyword">
+								<a class="disabled">Network Intrusion Detection System using Machine Learning Techniques</a>
 							</h4>
-							<p class="card-text">For the Blockchain course, me and my partner presented a lecture on common security vulnerabilities (like Reentrancy vulnerability of the DAO hack) and bad practices found in Ethereum smart contracts. The lecture had both theoretical discussion and a live demo including static analysis of the contracts with Oyente, deployment on Ropsten testnet and exploitation using Remix IDE.</p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/analyzed_contracts">View Code Repository</a>
+							<p class="card-text" style="color: white">For the course of Machine Learning, we created a system that uses mainly <span class="keyword">Multilayer Perceptron</span> (compared to <span class="keyword">SVM</span> and <span class="keyword">RandomForest</span>) using network packet metadata to decide whether there is an ongoing attack on the system, with a low false positive rate. With less accuracy, the system might also predict the type of attack happening (DoS, Backdoor etc.). The project was considered by the professor of the course as <span class="keyword">top 3</span>.</p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417">Code Repository</a>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://github.com/EvangelouSotiris/NIDS_Project_CE417/blob/master/TEAM_G_FINAL_REPORT.pdf">Paper</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
                         <div class="card-image">
 						    <div class="embed-responsive embed-responsive-16by9">
@@ -213,51 +189,43 @@
 						    </div>
                         </div>
                         <div class="card-body">
-							<h4 class="card-title">
-								<a>Nasa Space Apps Challenge 2018 : Find my Cryosphere</a>
+							<h4 class="card-title keyword">
+								<a class="disabled">Nasa Space Apps Challenge 2018 : Find my Cryosphere</a>
 							</h4>
-							<p class="card-text">Participated in the 1-day Challenge, solving "Find my Cryosphere". Namely, me and my partner developed a Python script that mines data from Nasa's earthdata web page, finds the places with most cold temperatures (cryosphere) and attempts to find organisations and businesses that might be affected in those areas using TomTom's maps and API.</p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/nasa_space_apps_2018">View Code</a>	
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/details">View Challenge</a>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/teams/hmmy-uth/project">View Team</a>
+							<p class="card-text" style="color: white">Participated in the 1-day Challenge, solving "Find my Cryosphere". Namely, me and my partner developed a <span class="keyword">Python</span> script that mines data from Nasa's earthdata web page, finds the places with most cold temperatures (cryosphere) and attempts to find organisations and businesses that might be affected in those areas using TomTom's maps and API.</p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://github.com/EvangelouSotiris/nasa_space_apps_2018">Code Repository</a>	
+							<a class="btn port_btn" style="font-size: 16px;" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/details">Challenge</a>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://2018.spaceappschallenge.org/challenges/icy-glare/find-my-cryosphere/teams/hmmy-uth/project">Team</a>
                         </div>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
-                        <a><img class="card-img-top" src="items/ingameapp.png" alt=""></a>
+                        <a class="disabled"><img class="card-img-top" src="items/ingameapp.png" alt=""></a>
                         <div class="card-body">
-							<h4 class="card-title">
-								<a> Videogame database Redis application</a>
+							<h4 class="card-title keyword">
+								<a class="disabled"> Videogame database Redis application</a>
 							</h4>
-							<p class="card-text"> Project for the Advanced Data Management course (noSQL databases). I chose Redis, and implemented a Nodejs application, where a player can create a new character, log in, perform game actions and search other players by doing under the hood asynchronous calls to a Redis key-value store. </p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/ingame_database_app_redis">View Code</a>
-							<a class="btn dropbtn" style="font-size: 20px;" href="items/Redis_report_2159.pdf">View Redis Survey Paper</a>
+							<p class="card-text" style="color: white"> Project for the Advanced Data Management course (noSQL databases). I chose <span class="keyword">Redis</span>, and implemented a <span class="keyword">Nodejs application</span>, where a player can create a new character, log in, perform game actions and search other players by doing under the hood asynchronous calls to a Redis <span class="keyword">key-value store</span>. </p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://github.com/EvangelouSotiris/ingame_database_app_redis">Code Repository</a>
+							<a class="btn port_btn" style="font-size: 16px;" href="items/Redis_report_2159.pdf">Redis Survey Paper</a>
                         </div>
 					</div>
 				</div>
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-4 mb-2">
 					<div class="card h-100">
-						<a><img class="card-img-top" src="items/uth.png" alt=""></a>
+						<a class="disabled"><img class="card-img-top" src="items/uth.png" alt=""></a>
 						<div class="card-body">
-							<h4 class="card-title">
-								<a>Citation Prediction with Long Short-Term Memory Neural Networks</a>
+							<h4 class="card-title keyword">
+								<a class="disabled">Citation Prediction with Long Short-Term Memory Neural Networks</a>
 							</h4>
-							<p class="card-text"> Took data from Aminer.com regarding citations of academic papers over the years, processed them and created a Long Short-Term Memory neural network that trains on these data and predicts the number of citations a paper can get next year, and after 5 years given a citation timeseries of the former years.</p>
-							<a class="btn dropbtn" style="font-size: 20px;" href="https://github.com/EvangelouSotiris/citation_forecasting_LSTM_NN">View Code</a>
+							<p class="card-text" style="color: white"> Took data from Aminer.com regarding citations of academic papers over the years, processed them and created a <span class="keyword">Long Short-Term Memory</span> neural network that trains on these data and predicts the number of citations a paper can get next year, and after 5 years given a citation <span class="keyword">timeseries</span> of the former years.</p>
+							<a class="btn port_btn" style="font-size: 16px;" href="https://github.com/EvangelouSotiris/citation_forecasting_LSTM_NN">Code Repository</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- /.row -->
-		</div>
-		<div class="footer">
-			<a href="https://www.linkedin.com/in/sevangelou/"><i class="fa fa-linkedin"></i></a>
-			<br> <a href="https://github.com/EvangelouSotiris"><i class="fa fa-github"></i></a>
-			<br> <a href="mailto:sevangelou@uth.gr?subject=Hello there!"><i class="fa fa-envelope"></i></a>
-		</div>
-		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</body>
+	</div>
+</body>
+
 </html>
