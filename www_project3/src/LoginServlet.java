@@ -25,8 +25,8 @@ public class LoginServlet extends HttpServlet {
 	public void doPost (HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
 		String jdbcURL = "jdbc:mysql://localhost:3306/project3";
-        	String dbUser = "root";
-        	String dbPassword = "swt";
+        	String dbUser = "";
+        	String dbPassword = "";
 		
 		String name=request.getParameter("username");
 		String pass=request.getParameter("password");
