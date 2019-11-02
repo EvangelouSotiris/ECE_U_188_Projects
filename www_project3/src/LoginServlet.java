@@ -8,31 +8,18 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class LoginServlet extends HttpServlet {
-	/*
-	public void doGet (HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {	
-		response.setContentType("text/html");
-        	PrintWriter out = response.getWriter();
-       		out.println("<html>");
-        	out.println("<head>");
-        	out.println("<title>Hello World!</title>");
-        	out.println("</head>");
-        	out.println("<body>");
-        	out.println("Dont GET this servlet");
-		out.println("</body>");
-        	out.println("</html>");	
-	}
-	*/
 	public void doPost (HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
 		String jdbcURL = "jdbc:mysql://localhost:3306/project3";
-        	String dbUser = "";
-        	String dbPassword = "";
+        	String dbUser = "root";
+        	String dbPassword = "swt";
 		
 		String name=request.getParameter("username");
 		String pass=request.getParameter("password");
 		try {
+			Class.forName("com.mysql.jdbc.Driver");
 			Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);	
-			String sql = "SELECT lastname FROM userinfo WHERE username = ? and password = ?";
+			String sql = "SELECT * FROM userinfo WHERE username = ? and password = ?";
         		PreparedStatement statement = connection.prepareStatement(sql);
         		statement.setString(1, name);
         		statement.setString(2, pass);
@@ -44,9 +31,8 @@ public class LoginServlet extends HttpServlet {
         		out.println("<title>Hello World!</title>");
         		out.println("</head>");
         		out.println("<body>");
-        		out.println("<h1>post request got, SELECT lastname FROM userinfo WHERE username = ? and password = ?</h1>");
-			out.println("<p>yo</p>");
-        		out.println(result);
+			result.next();
+        		out.println(result.getString("fullname"));
 			out.println("</body>");
         		out.println("</html>");	
 		}
@@ -57,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 			out.println("<head>");
 			out.println("</head>");
 			out.println("<body>");
-			System.out.println("fuck");
+			out.println(e);
 			out.println("</body>");
 			out.println("</html>");
 		}
