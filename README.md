@@ -1,4 +1,4 @@
-# ECE_U_188_Projects
+# ECE_188 WWW Technologies Projects
 Projects for the ECE-U-188 course: World Wide Web Technologies.
 
 ## Project 1:
