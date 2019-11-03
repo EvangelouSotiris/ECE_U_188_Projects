@@ -10,4 +10,4 @@ Contains a pdf report from google analytics on the 1st project's website.
 
 ## Project 3:
 Contains an Apache Tomcat8 Java servlets webapp. A simple AUTH application including a simple interface that provides Login and Register functions by running queries and updates on a MariaDB mysql database. Tomcat and MariaDB servers run on a Ubuntu 16.04 LTS Server, installed and configured by me.
-Application accessible at  [http://snf-871528.vm.okeanos.grnet.gr:8080/project3/Login](http://http://snf-871528.vm.okeanos.grnet.gr:8080/project3/Login).
+Application accessible at  [http://snf-871528.vm.okeanos.grnet.gr:8080/project3/Login](http://snf-871528.vm.okeanos.grnet.gr:8080/project3/Login).
