@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>
+			Log in :)
+		</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body style="text-align: center;">
+		<div class="row">
+			<div class="col">
+				<h1> Welcome to my mysterious site. Wonder what's inside? </h1>
+				<h2> You need a user account to log in. </h2>
+				<br>
+				<br>
+			</div>
+		</div>
+		<div class="row">	
+			<div class="col-3"></div>
+			<div class="col-3" style="text-align: center;">
+				<h3> Log in to account </h3>
+				<form class="form-signin" action="LoginServlet" method="post" >
+					Username: <br>
+					<input type="text" name="username"/><br>
+					Password:<br>
+					<input type="password" name="password"/><br>
+					<input class="btn btn-primary" type="submit" name="login" value="Log in"/><br>
+				</form>
+			</div>
+			<div class="col-3" style="text-align: center;">
+				<h3> Create a new account </h3>
+				<form class="form-signin" action="RegisterServlet" method="post">
+					Username (Must be unique): <br>
+					<input type="text" name="username"/><br>
+					Password:<br>
+					<input type="password" name="password"/><br>
+					Confirm Password:<br>
+					<input type="password" name="password2"/><br>
+					Full Name:<br>
+					<input type="text" name="fullname"/><br>
+					Age:<br>
+					<input type="text" name="age"/><br>
+					<input class="btn btn-primary" type="submit" name="register" value="Register"/><br>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
