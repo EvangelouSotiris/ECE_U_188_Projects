@@ -87,7 +87,7 @@ public class RegisterServlet extends HttpServlet {
 			this.RenderMessage("Form error","Fields must not be empty.",response);
 		}
 		else {
-			create(name, pass, fullname, Integer.parseInt(age));	
+			create(name, pass, fullname, Integer.parseInt(age),response);
 		}
 	}
 
@@ -105,7 +105,7 @@ public class RegisterServlet extends HttpServlet {
 		out.println("</html>");
 	}
 
-    	public static void create(String username, String password, String fullname, int age) {
+    	public void create(String username, String password, String fullname, int age, HttpServletResponse response) {
         	// Create an EntityManager
         	EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
         	EntityTransaction transaction = null;
@@ -128,7 +128,19 @@ public class RegisterServlet extends HttpServlet {
 
             		// Commit the transaction
             		transaction.commit();
+			
+			this.RenderMessage("Registration Status","You have been successfully registered as " + username,response);	
         	} catch (Exception ex) {
+        		try {
+            			// Get a transaction
+            			transaction = manager.getTransaction();
+            			// Begin the transaction
+            			transaction.begin();
+            			User usr = manager.find(User.class, username);
+				this.RenderMessage("Registration Status","Registration failed : Account with username " + username + " already exists",response);	
+			} catch (Exception ex2) {
+				ex.printStackTrace();
+			}
             		// If there are any exceptions, roll back the changes
             		if (transaction != null) {
                 		transaction.rollback();
