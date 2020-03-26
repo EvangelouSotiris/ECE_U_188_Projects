@@ -1,6 +1,8 @@
 # ECE_188 WWW Technologies Projects
 Projects for the ECE-U-188 course: World Wide Web Technologies.
 
+## NOTICE: The links for the tomcat apps are now dead
+
 ## Project 1:
 Contains a static HTML Bootstrap website that I am using as my personal-portfolio website. 
 Website accessible at [inf-server.inf.uth.gr/~sevangelou](http://inf-server.inf.uth.gr/~sevangelou).
